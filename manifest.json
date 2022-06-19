@@ -1,7 +1,7 @@
 {
   "name": "GRID GALLERY",
   "short_name": "GRID GALLERY",
-  "start_url": "/",
+  "start_url": "./index.html",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
