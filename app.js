@@ -71,7 +71,7 @@ const createGridItems = (photos) => {
 };
 //Function to kickstart app - make a request , handle response and create grid items
 function initApp() {
-  fetch(`https://api.unsplash.com/photos/random?count=30&client_id=${atob(
+  fetch(`https://api.unsplash.com/photos/random?count=28&client_id=${atob(
     "YTg5YTc2Yzk4ZWNmNmI5OWRhMzlmYTJiMDM0MmE3ODA0MWE5ZDU1ODk3N2MyMjQ0MmNhMTZkYjAzNTE0NzhhNA=="
   )}
     `)
