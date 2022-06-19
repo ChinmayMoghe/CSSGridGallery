@@ -2,6 +2,7 @@
   "name": "GRID GALLERY",
   "short_name": "GRID GALLERY",
   "start_url": "https://chinmaymoghe.github.io/CSSGridGallery",
+  "scope": "/CSSGridGallery",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
@@ -30,5 +31,6 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "fullscreen",
+  "description": "This is a simple demo for CSS grid responsiveness"
 }
