@@ -14,12 +14,10 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches
-      .open(STATIC_ASSET_CACHE)
-      .then((cache) =>
-        cache
-          .match(event.request)
-          .catch((response) => response ?? fetch(event.request))
-      )
+    fetchEvent.respondWith(
+      caches.match(fetchEvent.request).then((res) => {
+        return res || fetch(fetchEvent.request);
+      })
+    )
   );
 });
