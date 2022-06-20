@@ -2,7 +2,7 @@
   "name": "GRID GALLERY",
   "short_name": "GRID GALLERY",
   "start_url": "https://chinmaymoghe.github.io/CSSGridGallery",
-  "scope": "/CSSGridGallery",
+  "scope": "./",
   "icons": [
     {
       "src": "icons/manifest-icon-192.maskable.png",
