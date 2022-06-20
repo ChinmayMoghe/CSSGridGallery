@@ -1,6 +1,6 @@
 // install event fired - when service worker is installed
 const STATIC_ASSET_CACHE = "grid-gallery-static-asset";
-const STATIC_ASSETS = ["index.html", "app.js", "style.css", "offline.html"];
+const STATIC_ASSETS = ["index.html", "app.js", "style.css"];
 
 // Install the SW
 self.addEventListener("install", (event) => {
