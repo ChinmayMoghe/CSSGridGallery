@@ -55,6 +55,7 @@ const preloadImages = (photos) => {
 //Note : Add a child div for each grid item with attribution
 const createGridItems = (photos) => {
   const GRID_CONTAINER = document.querySelector(".grid-container");
+  const fragment = document.createDocumentFragment();
   photos.forEach((photo) => {
     const gridElem = document.createElement("div");
     gridElem.classList.add("grid-item");
@@ -64,10 +65,13 @@ const createGridItems = (photos) => {
     const attributionStr = `Photo by <a href="${photo.userProfile}" target="_blank" rel="noreferrer noopener">${photo.userName}</a></span> on <a href="https://unsplash.com/" target="_blank" rel="noreferrer noopener">Unsplash</a> `;
     attributionElem.insertAdjacentHTML("beforeend", attributionStr);
     gridElem.appendChild(attributionElem);
-    if (GRID_CONTAINER) {
-      GRID_CONTAINER.appendChild(gridElem);
+    if (fragment) {
+      fragment.appendChild(gridElem);
     }
   });
+  if (GRID_CONTAINER) {
+    GRID_CONTAINER.appendChild(fragment);
+  }
 };
 //Function to kickstart app - make a request , handle response and create grid items
 function initApp() {
